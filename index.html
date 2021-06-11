@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="Css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Portfolio</title>
+</head>
+<nav class="navbar navbar-expand-lg" style="background-color:#121127;" id="home">
+    <div class="container">
+        <a class="navbar-brand" href="#">Ekart</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#hero-header">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link pr-5" href="#hero-main">Today's Deal</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link  pr-5 dropdown-toggle" href="#main-categ" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown">
+                        Shop By Category
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#phone-category">Mobile & Accessories</a></li>
+                        <li><a class="dropdown-item" href="#lap-category">Laptop & Accessories</a></li>
+                    </ul>
+                </li>
+                <button class="btn btn-outline-primary" type="submit" data-bs-toggle="modal"
+                    data-bs-target="#signinModal">Account</button>
+            </ul>
+
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <a href=""><i class="fa fa-search fs-5 mx-2"></i></a>
+                <a href="#"><i class="fa fa-shopping-cart fs-5" style="letter-spacing: normal;"></i></a>
+
+            </form>
+        </div>
+    </div>
+    </div>
+</nav>
+<!-- SigninModal -->
+<div class="modal fade" id="signinModal" tabindex="-1" aria-labelledby="signinModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="signinModalLabel">Sign In</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Remember me</label>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-outline-primary">Sign in</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- SignUpModal -->
+<div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="signupModalLabel">Modal title</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                ...
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Nav End-->
+<!--header section-->
+<section class="hero-header features" id="hero-header">
+    <div id="carouselExampleCaptions">
+        <div class="carousel-inner">
+            <div class="carousel-item active ">
+                <img src="/images/cover.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-md-block">
+                    <h1>WE WORK TO MAKE IT REAL!</h1>
+                    <p>The Complete Toolkit for The Best Online Ecommerce Platform</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Header section end-->
+
+
+
+<!--main-->
+<section class="hero-main" id="hero-main">
+    <div class="container my-5 text-center"><br>
+        <h1 class="mt-2">Today's Deal</h1>
+        <p>We work to make it real!</p>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-xl-4 g-4 my-1">
+            <div class="col">
+                <div class="card h-100 px-2">
+                    <img src="/images/deals-laptop.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Mackbook Pro</h5>
+                        <p class="card-text">Powerful creativity and productivity tools live inside every Mac — apps
+                            that help you explore, connect and work more efficiently. Incredible.</p>
+                        <a href="#" class="btn btn-outline-primary px-4">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col ">
+                <div class="card h-100 px-2">
+                    <img src="/images/iphone12s-removebg-preview.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Iphone 12 Mini</h5>
+                        <p class="card-text">Vastly more contrast. Incredible colour accuracy. A huge jump in pixel
+                            density.4 Wow. Just wow,OLED.</p>
+                        <a href="#" class="btn btn-outline-primary px-4">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 px-2">
+                    <img src="/images/oneplus-mobile-removebg-preview.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Oneplus 9T</h5>
+                        <p class="card-text">Next-level mobile gaming arrives with the OnePlus 9 Pro. The class-leading
+                            120 Hz Fluid Display 2.0 and massive power of the Qualcomm®.</p>
+                        <a href="#" class="btn btn-outline-primary px-4">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 px-2">
+                    <img src="/images/iphone12sblue-removebg-preview.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Iphone 12S</h5>
+                        <p class="card-text"> An edge-to-edge OLED display. Ceramic Shield with four times better drop
+                            performance. And
+                            Night mode on every camera..</p>
+                        <a href="#" class="btn btn-outline-primary px-4">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <br><br><br>
+</section>
+
+<!--Category-->
+<section id="main-categ">
+    <div class="container text-center">
+        <h1 class="mb-2">Shop By Category</h1>
+        <p>We work to make it real!</p>
+
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="card my-2">
+                    <div class="card-body">
+                        <h2 class="card-title">Phones</h2>
+                        <img src="/images/iphone12s-removebg-preview.png" class="card-img-top" alt="Phone">
+                        <p class="card-text">Technology has forever changed the world we live in. We're online, in one
+                            way or another, all day long.</p>
+                        <a href="#" class="btn btn-outline-primary px-4">View All</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card my-2">
+                    <div class="card-body">
+                        <h2 class="card-title">Laptops</h2>
+                        <img src="/images/deals-laptop.png" class="card-img-top" alt="Laptops"><br><br>
+                        <p class="card-text">Technology has forever changed the world we live in. We're online, in one
+                            way or another, all day long.</p>
+                        <a href="#" class="btn btn-outline-primary px-4">View All</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row my-2">
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class="card-title">Desktops</h2>
+                        <img src="/images/deal-mac.png" class="card-img-top" alt="Desktops">
+                        <p class="card-text">Technology has forever changed the world we live in. We're online, in one
+                            way or another, all day long.</p>
+                        <a href="#" class="btn btn-outline-primary px-4">View All</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class="card-title">Tablets</h2>
+                        <img src="/images/tab-removebg-preview.png" class="card-img-top" alt="Tablet">
+                        <p class="card-text">Technology has forever changed the world we live in. We're online, in one
+                            way or another, all day long.</p>
+                        <a href="#" class="btn btn-outline-primary px-4">View All</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Phone Category-->
+
+<section class="phone-category" id="phone-category">
+    <div class="container my-5 text-center">
+        <h1 class="mt-7">Phones</h1>
+        <p class="">How well we communicate is determined not by how well we say things, but how well we are understood.
+        </p>
+        <div class="container">
+            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="2000">
+                        <img src="/images/oneplus-mobile-cover.jpg" class="d-block w-100" alt="mobile-cover">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="/images/oneplus-nord-cover.jpg" class="d-block w-100" alt="nord-cover">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="/images/Iphone12-mini.jpg" class="d-block w-100" alt="Iphone12-mini">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-3 g-4 my-1">
+            <div class="col">
+                <div class="card h-80 px-2">
+                    <img src="/images/oneplus8grey-removebg-preview.png" class="card-img-top" alt="Samsung Galaxy">
+                    <div class="card-body">
+                        <h5 class="card-title">OnePlus8+</h5>
+                        <p class="card-text" >$ 750.00 USD</p>
+                        <a href="#" class="btn btn-outline-primary px-4">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-80 px-2">
+                    <img src="/images/oneplus-mobile-removebg-preview.png" class="card-img-top" alt="Iphone">
+                    <div class="card-body">
+                        <h5 class="card-title">OnePlus 9T</h5>
+                        <p class="card-text">$ 750.00 USD</p>
+                        <a href="#" class="btn btn-outline-primary px-4">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-80 px-2">
+                    <img src="/images/oneplus8grey-removebg-preview.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">OnePlus 9S</h5>
+                        <p class="card-text">$ 750.00 USD</p>
+                        <a href="#" class="btn btn-outline-primary px-4">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-80 px-2">
+                    <img src="/images/iphone12swhite-removebg-preview.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Iphone 12S</h5>
+                        <p class="card-text">$ 700.00 USD</p>
+                        <a href="#" class="btn btn-outline-primary px-4">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-80 px-2">
+                    <img src="/images/iphone12sblue-removebg-preview.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Iphone Mini S</h5>
+                        <p class="card-text">T$ 750.00 USD</p>
+                        <a href="#" class="btn btn-outline-primary px-4">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-80 px-2">
+                    <img src="/images/iphone12s-removebg-preview.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Iphone mini</h5>
+                        <p class="card-text">$ 750.00 USD</p>
+                        <a href="#" class="btn btn-outline-primary px-4">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!--Laptop Category-->
+<section class="lap-category" id="lap-category">
+    <div class="container my-5 text-center">
+        <h1 class="mt-5">Laptops</h1>
+        <p class="my-2">How well we communicate is determined not by how well we say things, but how well we are
+            understood.</p>
+        <div class="container">
+            <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+                <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+                    <h3 class="display-7 fw-bold lh-1">You can Learn & create, with <br> the Best Technologic Tools</h3>
+                    <p class="lead">Engineering or technology is all about using the power of science to make life
+                        better for
+                        people, to reduce cost, to improve comfort, to improve productivity, etc.</p>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
+                        <button type="button" class="btn btn-outline-primary btn-lg px-4">Buy Now</button>
+                        <button type="button" class="btn btn-outline-secondary btn-lg px-4">Read More</button>
+                    </div>
+                </div>
+                <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
+                    <img class="rounded-lg-3" src="/images/processor__gb8d1ide5126_small-removebg-preview.png" alt="" width="420">
+                </div>
+            </div>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-3 g-4 my-1">
+            <div class="col">
+                <div class="card h-80 px-2">
+                    <img src="/images/msi-original-imafzz45bfs9vh2n-removebg-preview.png" class="card-img-top my-5"
+                        alt="Samsung Galaxy">
+                    <div class="card-body">
+                        <h5 class="card-title">MSI GP66 Leopard</h5>
+                        <p class="card-text">$ 3400.00 USD</p>
+                        <a href="#" class="btn btn-outline-primary px-4">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-80 px-2">
+                    <img src="/images/na-laptop-msi-original-imagfq9cthg4wxwh-removebg-preview.png"
+                        class="card-img-top my-5" alt="Iphone">
+                    <div class="card-body">
+                        <h5 class="card-title">MSI GL65</h5>
+                        <p class="card-text">$ 2500.00 USD</p>
+                        <a href="#" class="btn btn-outline-primary px-4">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-80 px-2">
+                    <img src="/images/msi-na-thin-and-light-laptop-original-imafsdbjyf3kk5zv-removebg-preview.png"
+                        class="card-img-top my-5" alt="HP-Laptop">
+                    <div class="card-body">
+                        <h5 class="card-title">MSI Modern</h5>
+                        <p class="card-text">$ 2000.00 USD</p>
+                        <a href="#" class="btn btn-outline-primary px-4">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!--Shipping & Delivery-->
+<section class="ship">
+    <h1 class="text-center my-4">Shipping and Handling</h1>
+    <div class="container-fluid border text-center shipping py-5">
+        <div class="row">
+            <div class="col">
+                <i class="fa fa-money fa-2x" aria-hidden="true"></i>
+                <br>
+                <p style="font-weight:600;">Return Policy</p>
+            </div>
+            <div class="col">
+                <i class="fa fa-user fa-2x" aria-hidden="true"></i>
+                <br>
+                <p style="font-weight:600;">Help & Support</p>
+            </div>
+            <div class="col">
+                <i class="fa fa-truck fa-2x"></i>
+                <br>
+                <p style="font-weight:600;"> Fast Delivery</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Footer-->
+<footer class="py-4" style="background-color: #f5f5f5;">
+
+    <div class="container text-center">
+        <p class="m-0 p-0">Copyright &copy; 2020 All Rights Reserved.</p>
+        <div class="container-fluid fixed-bottom">
+            <a href="#home">
+                <i class="fa fa-arrow-up fa-2x"></i>
+            </a>
+        </div>
+    </div>
+</footer>
+
+<body>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

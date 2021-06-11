@@ -1,0 +1,127 @@
+
+.fa-shopping-cart, .fa-search
+{
+   margin-top: 8px;
+   letter-spacing: 10px;
+   text-decoration: none;
+   color: #fff;
+}
+.fa-shopping-cart:hover
+{
+    color: #0d6efd;
+    opacity: 0.8;
+}
+.fa-search:hover
+{
+    color: #0d6efd;
+    opacity: 0.8;
+}
+.fa-arrow-up
+{
+    float: right;
+    margin-bottom: 20px;
+    color: #000;
+
+}
+.card-text
+{
+    text-align: justify;
+}
+.nav-link
+{
+    color:#fff;
+    font-weight: 400;
+}
+
+.nav-link:hover
+{   
+    color: #0d6efd
+}
+.navbar-brand
+{
+    color:#fff;
+    font-weight: 800;
+}
+.navbar-brand:hover
+{
+   color: #fff;
+}
+.carousel-caption
+    {
+       position: absolute;
+       top:5%;
+    }
+    .carousel-caption h1
+    {
+        font-size:8px;
+    
+    }
+    .carousel-caption p
+    {
+        font-size:20px;
+        line-height:1.2;
+    }
+    .card-text
+    {
+        color: #343e52;
+        text-align: center;
+    }
+    .card
+    {
+        background-color: #f4f4f4;
+      
+    }
+ .shipping
+ {
+    background-image: linear-gradient(
+        131deg
+        , #ff3c00, #530fff);
+ }
+ .features
+ {
+    background-image: linear-gradient(
+        131deg
+        , #ff3c00, #530fff);
+ }
+
+@media only screen and (min-width: 600px) {
+       
+        .carousel-caption
+    {
+       position: absolute;
+       top:10%;
+    }
+    .carousel-caption h1
+    {
+        font-size:12px;
+    
+    }
+    .carousel-caption p
+    {
+        font-size:30px;
+        line-height:1.2;
+    }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+    .carousel-caption
+    {
+       position: absolute;
+       top:35%;
+      
+    }
+    .carousel-caption h1
+    {
+        font-size:1em;
+        text-transform: uppercase;
+        /*color: #677081;*/
+    
+    }
+    .carousel-caption p
+    {
+        font-size:47px;
+        line-height:1.6;
+        /*color: #343e52;*/
+    }
+}
